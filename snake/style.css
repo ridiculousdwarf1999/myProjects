@@ -32,3 +32,9 @@ body {
   background-size: cover;
   border-radius: 10%;
 }
+
+.mouse {
+  background: url('mouse.jpg');
+  background-size: cover;
+  border-radius: 10%;
+}

@@ -49,3 +49,23 @@ for (i = 0; i < snakeBody.length; i++) {
 snakeBody[0].classList.add('head');
 
 // console.log(snakeBody)
+
+let mouse;
+
+function createMouse() {
+  function generateMouse() {
+    let posX = Math.round(Math.random() * (10 - 1) + 1);
+    let posY   = Math.round(Math.random() * (10 -1) + 1);
+    return [posX, posY];
+  }
+
+  let mouseCoorinates = generateMouse();
+  //console.log(mouseCoorinates);
+  mouse = document.querySelector('[posX = "' + mouseCoorinates[0] + '"][posY = "' + mouseCoorinates[1] + '"]');
+  while (mouse.classList.contains('scaleBody')) {
+    let mouseCoorinates = generateMouse();
+    mouse = document.querySelector('[posX = "' + mouseCoorinates[0] + '"][posY = "' + mouseCoorinates[1] + '"]');
+  }
+  mouse.classList.add('mouse');
+}
+createMouse()
