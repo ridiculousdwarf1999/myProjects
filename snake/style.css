@@ -20,3 +20,15 @@ body {
   height: 50px;
   padding: 5px;
 }
+
+.scaleBody {
+  background: url('scale.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.head {
+  background: url('head.jpg');
+  background-size: cover;
+  border-radius: 10%;
+}
